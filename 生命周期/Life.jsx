@@ -1,9 +1,5 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-
-
-
-
 class ComLife extends Component{
     constructor(props){
         super(props)//调用继承Component的构造函数
@@ -11,7 +7,6 @@ class ComLife extends Component{
             msg:"hello world"
         }
         console.log("constructor构造函数")
-
     }
     componentWillMount(){
         console.log("componentWillMount组件将要渲染")
@@ -33,7 +28,6 @@ class ComLife extends Component{
             console.log(false)
             return false
         }
-        
     }
     componentWillUpdate(){
         console.log('componentWillUpdate组件将要更新')
@@ -59,7 +53,6 @@ class ComLife extends Component{
         })
     }
 }
-
 class ParentCom extends Component{
     constructor(props){
         super(props)
@@ -85,7 +78,6 @@ class ParentCom extends Component{
         })
     }
 }
-
 ReactDOM.render(
     <ParentCom></ParentCom>,
     document.querySelector('#root')
